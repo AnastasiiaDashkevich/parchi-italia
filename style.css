@@ -1,0 +1,462 @@
+/* Add font files for Reckless Neue */
+@font-face {
+  font-family: 'Reckless Neue';
+  src: url('fonts/reckless-neue.woff2') format('woff2'),
+       url('fonts/reckless-neue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-family-inter: 'Inter', sans-serif;
+  --font-family-reckless-neue: 'Reckless Neue', sans-serif;
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-2 {
+  position: absolute;
+  left: 0px;
+  top: 1060px;
+  width: 1440px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.text-4 {
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  width: 698px;
+  height: 23px;
+  font-size: 18px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-5 {
+  position: absolute;
+  left: 1px;
+  top: 118px;
+  width: 698px;
+  height: 23px;
+  font-size: 18px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-6 {
+  position: absolute;
+  left: 0px;
+  top: 49px;
+  width: 753px;
+  height: 43px;
+  font-size: 33px;
+  font-family: var(--font-family-reckless-neue);
+  font-weight: normal;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-7 {
+  position: absolute;
+  left: 0px;
+  top: 167px;
+  width: 753px;
+  height: 215px;
+  font-size: 33px;
+  font-family: var(--font-family-reckless-neue);
+  font-weight: normal;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-section-3 {
+  position: absolute;
+  left: 64px;
+  top: 214px;
+  width: 753px;
+  height: 382px;
+}
+
+.card_etna-jpg-12 {
+  width: 100%;
+  height: auto;
+}
+
+.image-wrapper-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.text-14 {
+  font-size: 14px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-wrapper-13 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.card-1-10 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 528px;
+  width: 528px;
+}
+
+.image-wrapper-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  height: 228px;
+  width: 100%;
+  height: auto;
+}
+
+.text-18 {
+  font-size: 14px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-wrapper-17 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.card-2-15 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 528px;
+  width: 528px;
+}
+
+.image-wrapper-20 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  height: 228px;
+  width: 100%;
+  height: auto;
+}
+
+.text-22 {
+  font-size: 14px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-wrapper-21 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.card-3-19 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 528px;
+  width: 528px;
+}
+
+.card_bellunesi-jpg-25 {
+  width: 100%;
+  height: auto;
+}
+
+.image-wrapper-24 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  height: 228px;
+}
+
+.text-27 {
+  font-size: 14px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(15, 15, 15, 1);
+}
+
+.text-wrapper-26 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.card-4-23 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 528px;
+  width: 528px;
+}
+
+.cards-9 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 34px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 2214px;
+  width: 2214px;
+  height: 228px;
+}
+
+.cards-container-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 2214px;
+  width: 2214px;
+  height: 228px;
+}
+
+.text-30 {
+  font-size: 18px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.logo-29 {}
+
+.text-36 {
+  font-size: 16px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.home-button-35 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 49px;
+  width: 49px;
+}
+
+.text-38 {
+  font-size: 16px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.attivita-button-37 {}
+
+.text-40 {
+  font-size: 16px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.flora-fauna-button-39 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 125px;
+  width: 125px;
+}
+
+.text-42 {
+  font-size: 16px;
+  font-family: var(--font-family-inter);
+  font-weight: bold;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.parchi-button-41 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 60px;
+  width: 60px;
+}
+
+.menu-34 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 10px 10px 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 339px;
+  width: 339px;
+  height: 20px;
+}
+
+.frame-32-33 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 339px;
+  width: 339px;
+  height: 20px;
+}
+
+.nav-32 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px 10px 10px 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 359px;
+  width: 359px;
+}
+
+.frame-31-31 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  height: 40px;
+}
+
+.header-28 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 735px;
+  padding: 8px 16px 8px 16px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 1285px;
+  width: 1285px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.rectangle-16-44 {
+  position: absolute;
+  left: 186.99998474121094px;
+  top: 120px;
+  width: 51.99998092651367px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.rectangle-11-45 {
+  position: absolute;
+  left: 119.99999237060547px;
+  top: 120px;
+  width: 52.99998092651367px;
+  height: 120px;
+  background-color: rgba(152, 145, 225, 1);
+}
+
+.rectangle-4-46 {
+  position: absolute;
+  left: 51.9999885559082px;
+  top: 120px;
+  width: 51.99998092651367px;
+  height: 120px;
+  background-color: rgba(241, 213, 177, 1);
+}
+
+.frame-27-43 {
+  position: absolute;
+  left: 1160px;
+  top: 323px;
+  width: 186.99998474121094px;
+  height: 120.00000762939453px;
+}
+
+.rapchi-home-1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 1080px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(245, 245, 245, 1);
+}

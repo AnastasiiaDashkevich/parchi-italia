@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'inter';
+    src: url('Inter_18pt-SemiBold') format('ttf'),
+       
+    font-weight
+    font-style
+}
+
+@font-face {
+    font-family: 'RecklessNeue-Regular';
+    src: url('RecklessNeue-Regular') format('woff'),
+    font-weight
+    font-style
+}
+
+
+
+body {
+    
+    max-width: 100%; /* Чтобы не было центрирования */
+    overflow-x: hidden; /* Запрещаем горизонтальный скролл */
+    padding-left: 20px; /* Добавляем небольшой отступ слева */
+
+    background-color: rgba(245, 245, 245, 1);
+
+    height: 100%;
+}
+
+main {
+    min-height: calc(100vh - 30px); /* Оставляем место только для контента */
+    padding-bottom: 0; /* Убираем лишний отступ */
+    
+}
+
+/* Шапка */
+header {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    width: calc(100% - 100px); /* 100% минус два отступа по 40px */
+    margin: 0 auto; /* Центрируем */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    overflow: hidden;
+    font-family: 'inter'
+    
+}
+
+
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #8B6FC2; /* Фиолетовый оттенок из палитры */
+}
+
+/* ОБЩИЙ КОНТЕЙНЕР ДЛЯ ТЕКСТА И НАВИГАЦИИ */
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse; /* Меняет порядок: сначала навигация, потом текст */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 15px;
+    font-family: 'inter'
+    
+
+}
+
+/* ТЕКСТОВЫЙ БЛОК С ВЕРТИКАЛЬНЫМ СКРОЛЛОМ */
+.text-content {
+    width: 70%;
+    padding: 15px;
+    overflow-y: auto; /* Вертикальный скролл */
+    max-height: 500px;
+}
+
+/* НАВИГАЦИЯ */
+.text-nav {
+    width: 20%;
+    padding: 15px;
+    border: 1px solid black;
+    margin-left: -90px
+    
+
+}
+
+.text-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-nav li {
+    margin-bottom: 10px;
+}
+
+.text-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-nav a:hover {
+    color: #8B6FC2;
+}
+
+/* ЛЕНТА ФОТОГРАФИЙ С ГОРИЗОНТАЛЬНЫМ СКРОЛЛОМ */
+.photo-gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 16px;
+    width: 100%;
+    margin-left: 20px; /* Добавляем отступ слева */
+    margin-bottom: 20px; /* Уменьшаем расстояние перед футером */
+    
+}
+
+.photo-container {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.photo img {
+    width: 320px;
+    height: 228px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+
+
+
+p {
+
+    font-family:'RecklessNeue-Regular'
+    
+}
+p {
+
+    font-size: 28px;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'inter'
+    
+}
+    
+.footer {
+    position: fixed; /* Закрепляем футер внизу */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: rgb(171, 171, 171);
+    text-align: center;
+    font-size: 2px;
+    padding: 5px 0; /* Делаем тонким, как в Home */
+    font-family: 'inter';
+    height: 10px; /* Фиксируем высоту, чтобы футер был маленьким */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стиль изображения внутри модального окна */
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Стиль подписи */
+.caption {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 90%;
+}

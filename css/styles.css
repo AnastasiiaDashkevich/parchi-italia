@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'inter';
+    src: url('Inter_18pt-SemiBold') format('ttf'),
+       
+    font-weight
+    font-style
+}
+
+@font-face {
+    font-family: 'RecklessNeue-Regular';
+    src: url('RecklessNeue-Regular') format('woff'),
+    font-weight
+    font-style
+}
+
+
+
+/* Общие стили */
+body {
+    
+    max-width: 100%; /* Чтобы не было центрирования */
+    padding-left: 20px; /* Добавляем небольшой отступ слева */
+
+    background-color: rgba(245, 245, 245, 1);
+}
+
+/* Шапка */
+header {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 16px 8px 16px;
+    width: calc(100% - 100px); /* 100% минус два отступа по 40px */
+    margin: 0 auto; /* Центрируем */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    overflow: hidden;
+    font-family: 'inter'
+    
+}
+
+
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #8B6FC2; /* Фиолетовый оттенок из палитры */
+}
+
+/* Основной контент */
+main {
+    padding: 40px;
+    margin-top: 20px; /* Увеличьте значение, если нужно больше отступа */
+    font-family:'RecklessNeue-Regular'
+    
+}
+
+/* Введение */
+.intro {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    left: 40px;
+    font-family:'RecklessNeue-Regular'
+    
+}
+
+.intro h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'inter'
+    
+}
+
+.intro h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'inter'
+    
+}
+
+.intro p {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    
+}
+
+.intro h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    font-family:'RecklessNeue-Regular'
+}
+
+/* Контейнер карточек с горизонтальным скроллом */
+.cards-container {
+    width: 100%; /* Ограничиваем ширину */
+    overflow-x: auto; /* Горизонтальный скролл */
+    white-space: nowrap; /* Запрещаем перенос элементов */
+    padding-bottom: 10px; /* Отступ снизу */
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+/* Контейнер, который содержит карточки */
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    width: max-content; /* Чтобы карточки растягивали контейнер */
+}
+.card {
+    width: 320px;
+    height: 228px;
+    position: relative;
+    border: 1px black solid;
+    padding: 15px; /* Добавляем внутренние отступы */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    overflow: hidden;
+}
+
+
+/* Текст внутри карточки */
+.card-title {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: black;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+    max-height: 80px;
+    margin-left: 0; /* Убираем лишние отступы */
+    margin-bottom: 8px; /* Добавляем отступ снизу */
+    white-space: normal; /* Позволяем заголовкам переноситься */
+    word-wrap: break-word; /* Перенос длинных слов */
+    overflow: hidden; /* Защита от переполнения */
+}
+
+.card-description {
+    font-size: 11px;
+    color: #000000;
+    margin-top: 40px;
+   line-height: 1.4;
+    overflow: hidden;
+    text-overflow : ellipsis;
+    white-space: normal;
+    max-height: 200px;
+    word-wrap: break-word;
+}
+
+
+/* Эффект при наведении */
+.card:hover {
+    background: #f1d5b1; /* Серый */
+    transform: translateY(-5px);
+    
+}
+
+/* Эффект при клике */
+.card:active {
+    background: #8B6FC2;
+    transform: translateY(-10px);
+}
+
+.card:active .card-title {
+    color: white;
+}
+
+
+.frame-27 {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    
+    top: 150px; /* Подстройте, чтобы двигать вверх-вниз */
+    right: 40px; /* Отступ справа */
+}
+
+.rectangle-16 {
+    background: #000000;
+    width: 52px;
+    height: 120px;
+    
+  
+}
+
+.rectangle-11 {
+    background: #9891e1;
+    width: 53px;
+    height: 120px;
+    
+  
+ 
+}
+
+.rectangle-4 {
+    background: #f1d5b1;
+    width: 52px;
+    height: 120px;
+    
+   
+
+}
+.intro {
+    max-width: 100%; /* Чтобы не было центрирования */
+    padding-left: 0px; /* Добавляем небольшой отступ слева */
+}
+h1, h2, h3, p {
+    text-align: left; /* Выравниваем влево */
+    margin-left: 0; /* Убираем лишние отступы */
+    max-width: 800px; /* Ограничиваем ширину, текст сам перейдет на новую строку */
+    
+    word-wrap: break-word;
+    font-family:'RecklessNeue-Regular'
+    
+}
+
+p {
+
+    font-family:'RecklessNeue-Regular'
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: rgb(171, 171, 171);
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}

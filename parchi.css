@@ -1,0 +1,131 @@
+/* Универсальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Избегаем горизонтальной прокрутки */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cfd95e;
+    color: rgb(0, 0, 0);
+}
+
+/* Шапка */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* На всю ширину */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 2rem; /* Внутренние отступы */
+    max-width: 1200px; /* Максимальная ширина */
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: left; /* Выравнивание заголовка влево */
+    margin: 1rem 0; /* Отступы сверху и снизу */
+    color: #000000;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0 2rem; /* Отступы сверху и снизу */
+    text-align: left; /* Выравнивание заголовков влево */
+    color: #252b25;
+}
+
+/* Карточки парков */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Сетка с двумя колонками */
+    gap: 2rem; /* Отступ между карточками */
+    margin: 2rem auto; /* Центрирование и отступы сверху и снизу */
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.card {
+    background: rgb(0, 0, 0);
+    border-radius: 12px;
+    box-shadow: 0 6px 10px hsla(130, 94%, 69%, 0.53);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 0 8px 12px hsla(130, 94%, 69%, 0.53);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-content h3 a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.5rem;
+}
+
+.card-content h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 10px 0; /* Внутренние отступы только сверху и снизу */
+    background-color: #000000; /* Цвет фона */
+    color: white; /* Цвет текста */
+    width: 100%; /* Ширина подвала на весь экран */
+    margin: 0; /* Убираем внешние отступы */
+    position: relative; /* Для полного покрытия ширины */
+    left: 0; /* Привязка к левому краю */
+}

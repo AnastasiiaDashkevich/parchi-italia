@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTIVITÀ </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Шапка с навигацией -->
+    <header>
+        <div class="logo">RAPCHI D'ITALIA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="parchi.html">PARCHI</a></li>
+                <li><a href="Flora.html">FLORA E FAUNA</a></li>
+                <li><a href="attivita.html">ATTIVITÀ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Введение -->
+        <section class="intro">
+            <h1>PARCHI</h1>
+            <p>
+              I parchi naturali italiani offrono esperienze uniche per esplorare paesaggi straordinari: trekking panoramici, birdwatching, vulcani attivi e sentieri immersi nella biodiversità di monti e foreste.
+            </p>
+           
+            <div class="frame-27">
+              <div class="rectangle-16">
+              </div>
+              <div class="rectangle-11">
+              </div>
+              <div class="rectangle-4">
+              </div>
+              </div>
+          </section>
+         
+
+          <section class="cards-container">
+            <div style="width: 100%; height: 100%; flex-direction: column; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                <div style="align-self: stretch; height: 228px; justify-content: flex-start; align-items: center; gap: 34px; display: inline-flex">
+        
+                    <!-- Карточка 1 -->
+                    <div style="height: 228px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                            <img style="width: 192px; height: 228px" src="card_etna.jpg" />
+                        </div>
+                        
+                        <div class="card" data-url="etna.html" style="width: 320px; height: 228px; position: relative; border: 1px black solid">
+                            <div class="card-title">Parco dell’Etna</div>
+                            
+                        </div>
+                    </div>
+        
+                    <!-- Карточка 2 -->
+                    <div style="height: 228px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="width: 192px;">
+                            <img style="width: 192px; height: 228px" src="card_gran_paradiso.jpg" />
+                        </div>
+                        <div class="card" data-url="gran-paradiso.html" style="width: 320px; height: 228px; position: relative; border: 1px black solid">
+                            <div class="card-title">Parco Nazionale del Gran Paradiso</div>
+                        </div>
+                    </div>
+        
+                    <!-- Карточка 3 -->
+                    <div style="height: 228px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="width: 192px;">
+                            <img style="width: 192px; height: 228px" src="card_pollino.jpg" />
+                        </div>
+                        <div class="card" data-url="parco_pollino.html" style="width: 320px; height: 228px; position: relative; border: 1px black solid">
+                            <div class="card-title">Parco Nazionale del Pollino</div>
+                        </div>
+                    </div>
+        
+                    <!-- Карточка 4 -->
+                    <div style="height: 228px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                        <div style="width: 192px;">
+                            <img style="width: 192px; height: 228px" src="card_bellunesi.jpg" />
+                        </div>
+                        <div class="card" data-url="Bellunesi.html" style="width: 320px; height: 228px; position: relative; border: 1px black solid">
+                            <div class="card-title">Parco Nazionale delle Dolomiti Bellunesi</div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        
+
+          
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".card").forEach(card => {
+              card.style.cursor = "pointer"; // Добавляем курсор "pointer", чтобы видно было, что элемент кликабельный
+              
+              card.addEventListener("click", function (event) {
+                  event.stopPropagation(); // Предотвращаем всплытие событий
+                  
+                  // Удаляем класс "clicked" у всех карточек
+                  document.querySelectorAll(".card").forEach(c => c.classList.remove("clicked"));
+      
+                  // Добавляем класс "clicked" только к текущей карточке
+                  this.classList.add("clicked");
+      
+                  // Получаем URL из атрибута data-url
+                  const url = this.getAttribute("data-url");
+      
+                  // Проверяем, есть ли URL, и переходим
+                  if (url && url.trim() !== "") {
+                      console.log("Переход на: " + url); // Проверка, вывод в консоль
+                      window.location.href = url;
+                  } else {
+                      console.error("Ошибка: data-url отсутствует у карточки", this);
+                  }
+              });
+          });
+      });
+      </script>
+<footer class="footer">
+  <p>© 2025 Parchi d'Italia. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
